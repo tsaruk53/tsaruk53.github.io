@@ -1,0 +1,32 @@
+.table {
+    width: 90%;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .row {
+    width: 100%;
+    clear: both;
+  }
+  
+  .cell {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #e6f2ff;
+  }
+  
+  .header .cell {
+    background-color: #66b2ff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .row:nth-child(even) .cell:not(.header) {
+    background-color: #d0e7ff;
+  }
+  

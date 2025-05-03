@@ -1,0 +1,37 @@
+.table {
+    width: 90%;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .row {
+    width: 100%;
+    clear: both;
+  }
+  
+  .cell {
+    float: left;
+    width: 16.66%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .header {
+    font-weight: bold;
+    background-color: #aaffaa;
+  }
+  
+  .green {
+    background-color: #009900;
+    color: white;
+  }
+  
+  .full {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  
