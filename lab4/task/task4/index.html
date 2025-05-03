@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Елементи живлення</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      gap: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .battery {
+      position: relative;
+      width: 150px;
+      height: 40px;
+      border: 3px solid black;
+      margin: 10px;
+    }
+
+    .battery::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      top: 10px;
+      width: 6px;
+      height: 20px;
+      background: black;
+    }
+
+    .battery::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: var(--level);
+      background-color: var(--color);
+    }
+
+    .low {
+      --level: 30%;
+      --color: red;
+    }
+
+    .medium {
+      --level: 60%;
+      --color: gold;
+    }
+
+    .full {
+      --level: 100%;
+      --color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="battery low"></div>
+  <div class="battery medium"></div>
+  <div class="battery full"></div>
+
+</body>
+</html>
