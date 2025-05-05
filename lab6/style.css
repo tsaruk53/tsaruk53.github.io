@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f2a2a;
+  }
+  
+  .menu-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    height: 600px;
+  }
+  
+  .menu-left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .menu-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .menu-label h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  
+  .menu-label p {
+    margin: 10px 0 0;
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  .menu-right {
+    width: 50%;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .menu-right h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: 45%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .item h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .item::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .full-menu-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
